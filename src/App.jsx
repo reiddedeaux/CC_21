@@ -45,5 +45,13 @@ const App = () => {
     </div>
   );
 };
-
+return <Gallery tours={tours} />;
+if (tours.length === 0) {
+  return (
+    <div>
+      <h2>No tours left</h2>
+      <button onClick={() => window.location.reload()}>Refresh</button>
+    </div>
+  );
+}
 export default App;
