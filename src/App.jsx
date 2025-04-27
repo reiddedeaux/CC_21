@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import Gallery from './Gallery'; 
 const App = () => {
   const [tours, setTours] = useState([]);
   const [loading, setLoading] = useState(true);
